@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite" parallel="tests">
+ 
+ <test name="FirefoxTest">
+ 
+ <parameter name="browser" value="firefox" />
+ 
+ <classes>
+ 
+ <class name="automationFramework.MultiBrowser" />
+ 
+ </classes>
+ 
+ </test>
+ 
+ <test name="IETest">
+ 
+ <parameter name="browser" value="ie" />
+ 
+ <classes>
+ 
+ <class name="automationFramework.MultiBrowser" />
+ 
+ </classes>
+ 
+ </test>
+ 
+</suite>
+
+
+<!-- <suite name="Google Home Page" allow-return-values="true">
+<listeners>
+	<listener class-name="org.test.myown.b2btest.GoogleTestListener"></listener>
+</listeners>
+  <test thread-count="5" name="Homepage" >
+   <groups>
+	<run>
+		<include name="regressiontest"/>
+		<exclude name="smoketest"/>
+	</run>
+   </groups>
+    <packages>
+      <package name="org.test.myown.b2btest"/>
+    </packages>
+    <classes>
+    	<class name="org.test.myown.b2btest.TestHomePage" >
+    		<methods>
+    			<include name="testHomePage">
+    			</include>
+    			<include name="testMapLink"></include>
+    		</methods>
+    	</class>
+    </classes>
+  </test> Test
+  <test name="SideMenu">
+  <parameter name="first_name" value="Mr.World"></parameter>
+  <groups>
+  	<run>
+  		<include name="functionaltest"></include>
+  		<exclude name="smoketest"></exclude>
+  	</run>
+  </groups>
+  	<classes>
+  		<class name="org.test.myown.b2btest.menu.SideMenu1"></class>
+  	</classes>
+  </test>
+</suite> Suite -->
